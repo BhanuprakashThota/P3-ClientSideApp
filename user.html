@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Bhanuprakash Thota">
+    <meta name="description" content="This is my dev page">
+    <title>Bhanu-aboutme</title>
+    <link href="styles/thota.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align:center">Bhanu-About Me</h1><br>
+    </header>
+    <nav>
+        <img src="images/Bhanu.jpg" alt="profile picture" id="my_picture">
+        <ul class="navLinks">
+            <li><a href="index.html" rel="noopener">Index</a></li>
+            <li><a href="contact.html" rel="noopener">Contact</a></li>
+            <li><a href="user.html" rel="noopener">User Interaction</a></li>
+        </ul>
+    </nav>
+    <script>
+        function convertmeters() {
+            if (document.getElementById("c").value != " ") {
+                var f = document.getElementById("c").value * 1.6 * 1000;
+                document.getElementById("d").value = Math.round(f);
+            } else {
+                document.getElementById("d").value = "please enter the miles in above textbox";
+            }
+        }
+    </script>
+    <main class="container-fluid">
+        <h2 style="text-align:center" id="contact_heading">Miles to Meter Converter</h2>
+        <form style="text-align:center">
+            <h2>Convert miles to Meters</h2>
+            <h3>Enter Miles :</h3> <input id="c" type="text"></br></br>
+            <button type="button" id="convert" onclick="convertmeters()">Convert</button></br>
+            <h3>Meters :</h3><input type="text" id="d" readonly="true">
+            
+        </form>
+    </main>
+    <footer>
+        <p class="footer">
+            &copy Page belongs to Bhanu ; @contact - +16605415295
+        </p>
+    </footer>
+</body>
+
+</html>

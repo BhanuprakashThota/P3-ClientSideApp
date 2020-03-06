@@ -1,0 +1,68 @@
+#my_picture{
+    border-radius: 50%;
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 20%;  
+}
+body{
+    background-color: rgb(222, 242, 248);
+}
+
+.navLinks {
+    font-family: Poppins, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    margin: 0;
+    opacity: 0.70;
+    background-color: #3b3b3b;
+    white-space: nowrap;
+}
+
+.navLinks li {
+    display: inline-block;    
+    padding: 0 25px 1px 25px;
+    font-size: 30px
+}
+
+.navLinks li a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navLinks li a:hover {
+    color: #1C86EE;
+    font-weight: bold; 
+}
+
+aside a {
+    display: block;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    border: 3px #0c0c0c solid;
+    border-radius: 4px;
+    margin: 3px;
+    text-decoration: none;
+    color: #454372;
+}
+
+aside a:hover {
+    background-color: #8bf3c8;
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 180px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 180px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-cly1{text-align:center;vertical-align:middle}
+.tg .tg-0lax{text-align:center;vertical-align:top}
+.footer {
+    padding: 10px; 
+    color: white;
+    background-color: #3b3b3b;   
+    text-align: center;
+    font-size: 24px;
+}
