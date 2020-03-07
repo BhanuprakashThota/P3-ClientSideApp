@@ -5,9 +5,20 @@
     <meta charset="utf-8">
     <meta name="author" content="Bhanuprakash Thota">
     <meta name="description" content="This is my dev page">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
     <title>Bhanu-aboutme</title>
     <link href="styles/thota.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../src/jslogic.js"></script>
 </head>
 
 <body>
@@ -21,25 +32,18 @@
             <li><a href="contact.html" rel="noopener">Contact</a></li>
             <li><a href="user.html" rel="noopener">User Interaction</a></li>
         </ul>
-    </nav>
-    <script>
-        function convertmeters() {
-            if (document.getElementById("c").value != " ") {
-                var f = document.getElementById("c").value * 1.6 * 1000;
-                document.getElementById("d").value = Math.round(f);
-            } else {
-                document.getElementById("d").value = "please enter the miles in above textbox";
-            }
-        }
-    </script>
+    </nav>  
     <main class="container-fluid">
         <h2 style="text-align:center" id="contact_heading">Miles to Meter Converter</h2>
         <form style="text-align:center">
             <h2>Convert miles to Meters</h2>
             <h3>Enter Miles :</h3> <input id="c" type="text"></br></br>
-            <button type="button" id="convert" onclick="convertmeters()">Convert</button></br>
-            <h3>Meters :</h3><input type="text" id="d" readonly="true">
-            
+            <button type="button" id="convert" onclick="convertmeters()">Convert</button></br></br>
+            <h3>Meters :</h3><input type="text" id="d" readonly="true"> <br><br>
+            <hr>
+            <input type="button" class="btn btn-primary" value="getDogImage" id="getscore"><br><br>
+            <img type="text" id="dogarea"> 
+                      
         </form>
     </main>
     <footer>
