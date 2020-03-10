@@ -2,7 +2,11 @@ QUnit.module('MAIN MODULE', {})  // group all these tests together
 
 QUnit.test('TEST Meters', assert => {
   assert.equal(meter(100), 160934, 'miles to meters')
-  assert.equal(meter(-50), -80467, 'Negative meters')  
+  assert.equal(meter(-50), -80467, 'Negative meters') 
+  assert.equal(meter(56.7), 91249.578, 'Decimal Conversion')
+  assert.equal(meter(-56.7), -91249.578, 'Negative Decimal Conversion') 
+  assert.equal(meter(10), 16093.4, 'miles to meters')
+   
 })
 
 QUnit.config.autostart = false 
