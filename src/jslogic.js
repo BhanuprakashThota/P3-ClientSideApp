@@ -1,12 +1,13 @@
 const meter=(p)=>{return p * 1609.34}
 
 function convertmeters() {
-    if (document.getElementById("c").value != " ") {
-        var f = document.getElementById("c").value * 1.6 * 1000;
+
+   const a = parseInt(document.getElementById("c").value)
+        localStorage.setItem("val",a)
+        let q = localStorage.getItem("val")
+        var f = q* 1.6 * 1000
         document.getElementById("d").value = Math.round(f);
-    } else {
-        document.getElementById("d").value = "please enter the miles in above textbox";
-    }
+    
 }
 
 const jokeURI = 'https://dog.ceo/api/breeds/image/random'
